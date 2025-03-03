@@ -1,0 +1,52 @@
+@import "../../src/vars.css";
+
+.cntheading {
+    margin-top: 3% !important;
+    margin-bottom: 25px !important;
+    margin: 0 10%;
+}
+
+
+.contactList {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    margin: 0 10%;
+}
+
+.contactItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.contactItem a {
+    text-decoration: none;
+    color: var(--color-text);
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .contactWrapper {
+        flex-direction: column;
+        margin: 0 0;
+    }
+
+    .cntheading p{
+        margin: 0;
+    }
+
+    .contactList {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .contactList {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
