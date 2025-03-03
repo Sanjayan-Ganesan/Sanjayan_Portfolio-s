@@ -30,66 +30,30 @@ const TechStack = () => {
                 </div>
 
                 <div className={styles.gridCntr}>
-                    <div className={styles.teckstack}>
-                        <img src={html} alt='html' />
-                    </div>
-
-                    <div className={styles.teckstack}>
-                        <img src={css} alt='css' />
-                    </div>
-
-                    <div className={styles.teckstack}>
-                        <img src={scss} alt='js' />
-                    </div>
-
-                    <div className={styles.teckstack}>
-                        <img src={Js} alt='js' />
-                    </div>
-
-                    <div className={styles.teckstack}>
-                        <img src={react} alt='react' />
-                    </div>
-
-
-                    <div className={styles.teckstack}>
-                        <img src={angular} alt='angular' />
-                    </div>
-
-
-                    <div className={styles.teckstack}>
-                        <img src={php} alt='php' />
-                    </div>
-
-                    <div className={styles.teckstack}>
-                        <img src={node} alt='node' />
-                    </div>
-
-
-                    <div className={styles.teckstack}>
-                        <img src={python} alt='py' />
-                    </div>
-
-                    <div className={styles.teckstack}>
-                        <img src={typescript} alt='ts' />
-                    </div>
-
-                    <div className={styles.teckstack}>
-                        <img src={sql} alt='sql' />
-                    </div>
-
-
-                    <div className={styles.teckstack}>
-                        <img src={mongo} alt='mongo' />
-                    </div>
-
-                    <div className={styles.teckstack}>
-                        <img src={express} alt='ex' />
-                    </div>
-
-
-                    <div className={styles.teckstack}>
-                        <img src={git} alt='git' />
-                    </div>
+                    {[
+                        { src: html, alt: 'html' },
+                        { src: css, alt: 'css' },
+                        { src: scss, alt: 'scss' },
+                        { src: Js, alt: 'js' },
+                        { src: react, alt: 'react' },
+                        { src: angular, alt: 'angular' },
+                        { src: php, alt: 'php' },
+                        { src: node, alt: 'node' },
+                        { src: python, alt: 'python' },
+                        { src: typescript, alt: 'typescript' },
+                        { src: sql, alt: 'sql' },
+                        { src: mongo, alt: 'mongo' },
+                        { src: express, alt: 'express' },
+                        { src: git, alt: 'git' }
+                    ].map((tech, index) => (
+                        <div
+                            key={index}
+                            className={`${styles.teckstack} ${styles.slideIn}`}
+                            style={{ animationDelay: `${index * 0.2}s` }}
+                        >
+                            <img src={tech.src} alt={tech.alt} />
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

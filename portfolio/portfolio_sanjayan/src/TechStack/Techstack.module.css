@@ -11,13 +11,27 @@
 .gridCntr{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    gap:20px;
+    gap: 20px;
+    animation: slideIn 0.5s ease-in-out forwards;
 }
 
-.teckstack{
-    width: 50px;
-    height:50px;
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
+
+.teckstack {
+    width: 50px;
+    height: 50px;
+    animation: slideIn 2s ease-out forwards;
+}
+
 
 .teckstack img{ 
     width: 100%;
