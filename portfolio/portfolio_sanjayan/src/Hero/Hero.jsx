@@ -3,6 +3,10 @@ import styles from './Hero.module.css';
 import hero from '../Assests/Software_Eng.jpeg';
 
 const Hero = () => {
+    const downloadResume = () => {
+        window.open('https://drive.google.com/file/d/1-5CXNcfwgaxYP9ac1ACVavo0l6fl7Yos/view?usp=sharing', '_blank');
+    };
+
 return (
     <div>
         <div className={styles.heroCtnr}>
@@ -13,7 +17,7 @@ return (
                         A Full Stack Developer with 2.5 years of experience building dynamic web applications. Skilled in React, Angular, and backend technologies, I craft seamless user experiences. Let’s build something amazing together!
                     </p>
                     <div className={styles.btnCtnr}>
-                        <button className={styles.contactBtn}>Check Resume</button>
+                        <button onClick={downloadResume} className={styles.contactBtn}>Check Resume</button>
                     </div>
                 </div>
                 <div className={styles.heroImgCtnr}>

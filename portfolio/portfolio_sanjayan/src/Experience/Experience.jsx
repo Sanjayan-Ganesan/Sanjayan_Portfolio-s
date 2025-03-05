@@ -23,7 +23,7 @@ const Experience = () => {
                         <div className={styles.expContentCtnr1}>
                             <div className={styles.expContentCtnr2}>
                                 <p className={styles.expContentHeading}>Associate Software Engineer</p>
-                                <p className={styles.expContentSubHeading}>2023 to 2024</p>
+                                <p className={styles.expContentSubHeading}>2023 to Present</p>
                             </div>
                             <p className={styles.expContentSubHeading}>YsecIt Software Ltd</p>
                             <p className={styles.expContentSubHeading}>Bangalore</p>
